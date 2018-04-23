@@ -40,8 +40,8 @@ function checkCashRegister(price, cash, cid) {
         }
     ];
 
-    let addUpRegister = (accumulator, currentValue) => accumulator + currentValue;
-    let returnValues = (obj) => Math.floor(obj[1]*scale);
+    const addUpRegister = (accumulator, currentValue) => accumulator + currentValue;
+    const returnValues = (obj) => Math.floor(obj[1]*scale);
     
     let registerTotal = cid.map(returnValues).reduce(addUpRegister);
     

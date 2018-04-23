@@ -21,9 +21,9 @@ data = [
     },
 ];
 
-let isDog = animal => animal.type === 'dog';
-let dogYears = animal => animal.age * 7;
-let sum = (sum, animal) => sum + animal;
+const isDog = animal => animal.type === 'dog';
+const dogYears = animal => animal.age * 7;
+const sum = (sum, animal) => sum + animal;
 
 let ages = data
     .filter(isDog)
