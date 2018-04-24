@@ -25,13 +25,16 @@ const arrayOfObjectsGenerator = () => {
 let pets = arrayOfObjectsGenerator();
 
 pets 
-for (const pet of pets) {
-    doubler(pets.age)
-}
+// for (const pet of pets) {
+//     doubler(pets.age)
+// }
+ 
+
+// pets.map(() => )
 
 list
 
-console.log(pets);
+console.log(typeof pets);
 
 // for (const item in object) {
     
