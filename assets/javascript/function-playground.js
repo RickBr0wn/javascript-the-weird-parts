@@ -4,16 +4,16 @@ function sym() {
     return args.reduce(testForDifference);
 }
 
-function testForDifference(arrayOne, arrayTwo){
+const testForDifference = (arrayOne, arrayTwo) => {
     let answer = new Array();
 
-    arrayOne.forEach(function(item){
+    arrayOne.forEach(item => {
         if(arrayTwo.indexOf(item) < 0 && answer.indexOf(item) < 0){
             answer.push(item);
         }
     });
 
-    arrayTwo.forEach(function(item){
+    arrayTwo.forEach(item => {
         if(arrayOne.indexOf(item) < 0 && answer.indexOf(item) < 0){
             answer.push(item);
         }
