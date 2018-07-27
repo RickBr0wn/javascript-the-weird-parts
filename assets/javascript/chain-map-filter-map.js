@@ -9,7 +9,6 @@ data = [
       age: 6,
       type: 'dog'
     },
-    {
       name: 'Red',
       age: 1,
       type: 'cat'
