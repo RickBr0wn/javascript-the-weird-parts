@@ -15,4 +15,4 @@ const positiveSum = array => {
   return 0
 }
 
-console.log(positiveSum([-1,-4,-7,-12]));
+console.log(positiveSum([-1,-4,-7,-12]))
