@@ -1,0 +1,36 @@
+/**
+|--------------------------------------------------
+| Given an array of one's and zero's convert the equivalent binary value to an integer.
+| 
+| Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+| 
+| Examples:
+| 
+| Testing: [0, 0, 0, 1] ==> 1
+| Testing: [0, 0, 1, 0] ==> 2
+| Testing: [0, 1, 0, 1] ==> 5
+| Testing: [1, 0, 0, 1] ==> 9
+| Testing: [0, 0, 1, 0] ==> 2
+| Testing: [0, 1, 1, 0] ==> 6
+| Testing: [1, 1, 1, 1] ==> 15
+| Testing: [1, 0, 1, 1] ==> 11
+| However, the arrays can have varying lengths, not just limited to 4.
+|--------------------------------------------------
+*/
+
+// [1, 2, 4, 8]
+
+const incrementUp = num => num * 2
+const squareIt = num => num + num
+
+console.log(squareIt)
+
+const binaryArrayToNumber = array => {
+  const decimalPatternArray = array => array.map((item, index, array) => {
+    return index + index
+  })
+  
+  console.log(decimalPatternArray([1, 10, 100, 1000, 10000, 1000000]))
+}
+
+binaryArrayToNumber()
