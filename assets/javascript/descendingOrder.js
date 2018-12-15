@@ -14,10 +14,12 @@
 |--------------------------------------------------
 */
 
-const descendingOrder = num => Number(String(num).split('').sort().reverse().join(''))
+const descendingOrder = num => {
+  return Number(String(num).split('').sort().reverse().join(''))
+}
 
 const answer = descendingOrder(123456789) //?
-typeof(answer) //?
+typeof (answer) //?
 
 /**
 |--------------------------------------------------
