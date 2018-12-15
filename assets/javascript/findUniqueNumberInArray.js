@@ -5,6 +5,7 @@
  * @param `array` - the array to find the unique number in
  * @returns `number` - the unique number in the array
  */
+
 function findUniq(arr) {
   if (arr.filter(item => item === arr[0]).length === 1) {
     return Number(arr[0]);
