@@ -11,13 +11,7 @@ return `false`
 * @returns `string` - In the format as detailed above
 */
 function generateHashtag(str) {
-  return str.length > 140 || str === ""
-    ? false
-    : "#" +
-        str
-          .split(" ")
-          .map(capitalize)
-          .join("");
+  return str.length > 140 || str === "" ? false : "#" + str.split(" ").map(capitalize).join("");
 }
 
 /**
