@@ -6,8 +6,8 @@
 * @param `array` - The array to be filtered
 * @returns `array` - The filtered array minus all `strings`
 */
-export const filter_list = (...args) => {
-  return Array.from(...args).filter(item => typeof(item) !== 'string')
+export const filter_list = (args) => {
+  return args.filter(item => typeof(item) !== 'string')
 }
 
 console.log((filter_list([1,'a','b',0,15]),[1,0,15])) //?
