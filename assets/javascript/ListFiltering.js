@@ -1,17 +1,12 @@
 /**
-|--------------------------------------------------
-| 
-| In this kata you will create a function that takes a list of non-negative 
-| integers and strings and returns a new list with the strings filtered out.
-| 
-| filter_list([1,2,'a','b']) == [1,2]
-| filter_list([1,'a','b',0,15]) == [1,0,15]
-| filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
-| 
-|--------------------------------------------------
+* A function that takes an `array` of non-negative `integers` and/or `strings`, and returns a new `array` with the `strings` removed.  
+*   
+* eg: - filter_list([1,2,'a','b']) returns [1,2]
+*
+* @param `array` - The array to be filtered
+* @returns `array` - The filtered array minus all `strings`
 */
-
-const filter_list = (...args) => {
+export const filter_list = (...args) => {
   return Array.from(args).concat.apply([], args).filter(item => typeof(item) !== 'string')
 }
 
