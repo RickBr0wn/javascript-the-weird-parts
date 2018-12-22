@@ -1,8 +1,5 @@
-function sym() {
-    let args = Array.from(arguments)
-    console.log(args)
-    console.log(args.reduce(testForDifference))
-    return args.reduce(testForDifference)
+function sym() { //?
+    return Array(...arguments).reduce(testForDifference) //?
   }
   
   const testForDifference = (arrayOne, arrayTwo) => {
@@ -23,5 +20,5 @@ function sym() {
     return answer
   }
   
-  sym([1, 2, 3], [5, 2, 1, 4])
+  sym([1, 2, 3], [5, 2, 1, 4]) //?
   
