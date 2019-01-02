@@ -12,5 +12,5 @@ const makeList = arr => arr.map(item => (`<li class="text-warning">${item}</li>`
  *   `<li class="text-warning">var-on-top</li>`, 
  *   `<li class="text-warning">linebreak</li>` ]
  **/
-const resultDisplayArray = makeList(result.failure)
+const resultDisplayArray = makeList(result.failure) //?
 console.log(resultDisplayArray)

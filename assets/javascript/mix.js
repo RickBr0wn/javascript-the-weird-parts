@@ -1,5 +1,5 @@
-function mix(s1, s2) {
-  function lettersObjectCreator(string) {
+function lettersObjectCreator(string) {
+  function mix(s1, s2) {
     return string
       .replace(/[^a-z]+/g, "")
       .trim()
